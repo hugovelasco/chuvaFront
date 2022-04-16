@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+    <!-- Inicio cabeçalho -->
+
     <header>
         <div id="containerHeader">
             <div id="textHeader">
@@ -34,20 +37,31 @@
         </div>
     </header>
 
-    <section class="main-content">
+    <!-- Fim cabeçalho -->
+
+    <!-- Inicio conteudo central -->
+
+    <section class="main-container">
 
         <div class="half-container">
 
             <div id="iframe-content">
 
+                <!-- Titulo Principal -->
+
                 <h1>Análise sencorial de preparações funcinais desenvolvidas para escolares
                     entre 09 e 15 anos, do município de Campinas/SP
                 </h1>
+
+                <!-- Streaming video -->
 
                 <iframe src="https://www.youtube.com/embed/QUrbidgMWh4" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+
+            <!-- Botões -->
+
             <div class="right-side-container">
                 <div class="btn-container">
                     <button type="button" id="downBtn">Download</button>
@@ -55,6 +69,9 @@
                     <button type="button""><span>doi</span></button>
                 </div>
                 <span>Como citar esse trabalho?</span>
+
+                <!-- Quadro de detalhes e listas de informações -->
+
                 <div class=" right-square-container">
                         <p>Detalhes</p>
                         <div class="list-detail">
@@ -87,7 +104,7 @@
         </div>
 
         <div class="debate-container">
-            <div class="abstract">
+            <div class="standard-square">
                 <h1>Resumo</h1>
                 <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
                     a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os
@@ -97,7 +114,8 @@
                     anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e
                     mais recentemente com os programas de publicação como o Aldus
                     PageMaker que versões do Lorem Ipsum. <span id="before-dots" onclick="showMe()">... ver mais</span>
-                    <span id="after-dots"> Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto
+                    <span id="after-dots" onclick="showMe()"> Ao contrário da crença popular, o Lorem Ipsum não é
+                        simplesmente texto
                         aleatório. Tem raízes numa
                         peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard
                         McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das
@@ -140,22 +158,75 @@
                         Ipsum gerado é sempre livre de repetição, ou de injecção humorística, etc.</span>
                 </p>
             </div>
-        </div>
-        <!-- <footer>
-            <div class="footerLogo">
-                <img src="assets/img/galoa_logo.png">
-                <input type="button" value="Saiba mais">
-            </div>
-            <p>
-                Preservar a memória do evento e ampliar o acesso científico <br>
-                gerado em eventos é a razão de ser da Galoá Proceedings. <br><br>
 
-                Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica,
-                <br>
-                mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.
-            </p>
-        </footer> -->
+            <div class="standard-square">
+                <div class="standard-square-container">
+                    <h1>Discussões</h1>
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div id="standard-square-buttons">
+                        <button type="button" id="shareBrn"></button>
+                        <button type="button" id="questionBtn"></button>
+                        <button type="button" id="authorBtn"></button>
+                    </div>
+                    <p style="text-align: center;">Sabia que o maior estímulo no desenvolvimento científico e cultural é
+                        a
+                        curiosidade?<br>
+                        Deixe seus questionamentos ou sugestões para o autor!</p>
+                    <div class="plus-topic-container">
+                        <hr>
+                        <button type="button"> Criar tópico </button>
+                    </div>
+                </div>
+
+                <div class="">
+
+                </div>
+
+                <div class="sub-standard-container">
+                    <div class="sub-standard-square">
+                        <h3>Assunto da pergunta aparece aqui</h3>
+                        <h4>Carlos Henrique Santos</h4>
+                        <p>Comecinho da pergunta aparece aqui recente relato inscreve-se no campo da análise da dimensão
+                            e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <div class="sub-standard-network-btn">
+                            <button type="button">︙</button>
+                            <button type="button"></button>
+                            <a href="#">1 like</a>
+                            <a href="#">1 resposta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Inicio Rodape -->
+
+        <footer>
+            <div class="footer-container">
+                <div class="footerLogo">
+                    <img src="assets/img/galoa_logo.png">
+                    <input type="button" value="Saiba mais">
+                </div>
+                <p>
+                    Preservar a memória do evento e ampliar o acesso científico <br>
+                    gerado em eventos é a razão de ser da Galoá Proceedings. <br><br>
+
+                    Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade
+                    científica,
+                    <br>
+                    mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Fim Rodape -->
+
     </section>
+
+    <!-- Fim conteudo central -->
+
+    <!-- Inicio menu lateral -->
 
     <section id="side-menu">
         <div id="nome-evento">
@@ -175,20 +246,8 @@
 
     </section>
 
-    <!-- <footer>
-        <div class="footerLogo">
-            <img src="assets/img/galoa_logo.png">
-            <input type="button" value="Saiba mais">
-        </div>
-        <p>
-            Preservar a memória do evento e ampliar o acesso científico <br>
-            gerado em eventos é a razão de ser da Galoá Proceedings. <br><br>
+    <!-- Fim menu lateral -->
 
-            Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica,
-            <br>
-            mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.
-        </p>
-    </footer> -->
 </body>
 <script src="assets/scripts/script.js"></script>
 </body>
