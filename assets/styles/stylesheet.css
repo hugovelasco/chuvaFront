@@ -19,7 +19,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-#nome-evento+img {
+#nome-evento ~ img {
     width: 100%;
 
 }
@@ -298,6 +298,7 @@ iframe {
     border-radius: 3px 3px 0px 0px;
     height: 45px;
     width: calc(100% - 15px);
+    /* width: 100%; */
     display: flex;
     align-items: center;
     line-height: 25px;
@@ -395,6 +396,11 @@ iframe {
     position: relative;
 }
 
+.sub-standard-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .sub-standard-square {
     background: #FFFFFF;
     border: 1px solid #E7E7E7;
@@ -404,11 +410,9 @@ iframe {
     width: 95%;
     display: block;
     margin: auto;
-}
-
-.sub-standard-container {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    position: relative;
 }
 
 .sub-standard-square h3 {
@@ -461,7 +465,7 @@ iframe {
     margin: 5px;
 }
 
-.sub-standard-network-btn a {
+.sub-standard-network-btn span {
     cursor: pointer;
     text-decoration: none;
     color: #757575;
@@ -472,15 +476,66 @@ iframe {
     margin: 5px;
 }
 
-.qs-container {
-    display: block;
+#sub-standard-square-background-msg {
+    display: none;
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.8);
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #707070;
+    position: absolute;
+    height: 100%;
+    animation: fadeIn 2s;
+}
+
+#sub-standard-square-background-msg span:first-of-type {
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+#sub-standard-square-background-msg span:first-of-type::before {
+    content: "\2714";
+}
+
+#sub-standard-square-background-msg span:last-of-type {
+    color: #ED7839;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+#sub-standard-square-background-msg p {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#sub-standard-square-background-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#qs-container {
+    /* display: block; */
     margin: auto;
-    width: 95%;
+    width: 100%;
+    display: none;
+
 }
 
 .qs-fields {
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin: auto;
 }
 
 .qs-fields p {
@@ -540,4 +595,130 @@ iframe {
     cursor: pointer;
     font-size: 18px;
     margin-left: 8px;
+}
+
+#authors-container {
+    display: none;
+    background-color: #F8F8F8;
+    text-align: justify;
+    animation: fadeIn 2s;
+}
+
+.authors-names-container {
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.authors-names-container h5 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+}
+
+.authors-names-container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D;
+    text-align: justify;
+}
+
+.authors-names-container span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ED7839;
+}
+
+.authors-names-container span::after {
+    content: " \2714";
+}
+
+.authors-names-container {
+    padding: 10px;
+}
+
+.authors-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    margin: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .half-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-square-container {
+        width: 95%;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 11em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-container p {
+        width: 90%;
+    }
+
+    #side-menu{
+        width: 100%;
+        position: relative;
+        top:68px;
+    }
+
+    #side-menu img {
+        display: none;
+    }
+
+    #lista-menu li{
+        display: inline-block;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #textHeader {
+        display: none;
+    }
+
+    #containerHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
 }
