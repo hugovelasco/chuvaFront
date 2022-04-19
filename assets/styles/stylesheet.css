@@ -314,6 +314,7 @@ iframe {
     line-height: 23px;
     margin: 15px;
     text-align: justify;
+    cursor: pointer;
 }
 
 #before-dots {
